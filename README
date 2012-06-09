@@ -1,5 +1,9 @@
 INSTALL
-    - make install (links files)
+    - make install (links dotfiles to home directory)
 
 UNINSTALL
-    - make uninstall (unlinks files.  note, this removes files whethere
+    - make uninstall (unlinks dotfiles)
+
+AFTERINSTALL
+    - write your email address to ${HOME}/.secretrc to notify to git
+
