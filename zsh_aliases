@@ -3,10 +3,8 @@ alias grep='grep --color=always'
 alias fgrep='fgrep --color=always'
 alias egrep='egrep --color=always'
 alias history=' history'
-alias reload-zsh="source ~/.zshrc"
 alias perldoc='perldoc -i'
 alias prove='prove -Ilib'
-alias mongo="/Users/kouji/Development/mongodb/bin/mongo"
 alias mp3gain="mp3gain -r -c -k"
 
 # One Char Aliases
@@ -19,6 +17,7 @@ alias l=ls
 alias p=less
 alias s=screen
 
+alias reload-zsh="source ~/.zshrc"
 alias pc='less -R'
 alias pd=perldoc
 alias em=emacs
