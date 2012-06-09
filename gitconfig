@@ -22,4 +22,5 @@
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -RF
+	editor = vim
 
