@@ -1,0 +1,5 @@
+INSTALL
+    - make install (links files)
+
+UNINSTALL
+    - make uninstall (unlinks files.  note, this removes files whethere

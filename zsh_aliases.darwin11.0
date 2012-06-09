@@ -1,0 +1,8 @@
+alias ls='ls -G'
+alias ll='ls -G -l'
+alias la='ls -G -A'
+
+alias GET="lwp-request -m GET"
+alias POST="lwp-request -m POST"
+alias HEAD="lwp-request -m HEAD"
+

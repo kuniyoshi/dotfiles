@@ -1,0 +1,12 @@
+defscrollback 10000
+defbce on
+attrcolor b .I
+term xterm-256color
+vbell off
+autodetach on
+startup_message off
+hardstatus alwayslastline "%w"
+#termcapinfo xterm 'hs:ts=\E]2;:fs=\007:ds=\E]2;screen\007'
+escape ^Ta
+
+

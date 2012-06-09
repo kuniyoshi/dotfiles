@@ -1,0 +1,25 @@
+[color]
+	ui = auto
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	di = diff
+	dicw = diff --color-words
+	dicwhf = diff --color-words HEAD FETCH_HEAD
+	dihf = diff HEAD FETCH_HEAD
+	dino = diff --name-only
+	ds = diff --staged
+	g = grep
+	nbr = checkout -b
+	sh = show
+	shcw = show --color-words
+	st = status
+	sw = checkout
+
+[user]
+	name = Kuniyoshi Kouji
+[core]
+	excludesfile = ~/.gitignore
+	pager = less -RF
+

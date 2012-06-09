@@ -1,0 +1,28 @@
+# Default Options
+alias grep='grep --color=always'
+alias fgrep='fgrep --color=always'
+alias egrep='egrep --color=always'
+alias history=' history'
+alias reload-zsh="source ~/.zshrc"
+alias perldoc='perldoc -i'
+alias prove='prove -Ilib'
+alias mongo="/Users/kouji/Development/mongodb/bin/mongo"
+alias mp3gain="mp3gain -r -c -k"
+
+# One Char Aliases
+alias a=cat
+alias c=pwd
+alias e=$EDITOR
+alias g=git
+alias j=jobs
+alias l=ls
+alias p=less
+alias s=screen
+
+alias pc='less -R'
+alias pd=perldoc
+alias em=emacs
+alias watch_perl='watch_runner -makeprg=perl -beforemake=clear -aftermake='\''echo ... at $(date +%H:%M:%S)'\'
+
+source $0.$OSTYPE
+
