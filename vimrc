@@ -22,7 +22,8 @@ inoremap <C-@> <Nop>
 nnoremap <Leader>e :e $MYVIMRC<Cr>
 nnoremap <Leader>b :ls<Cr>:b 
 nnoremap <C-@> @@
-nnoremap ZX :w<Cr>
+nnoremap ZS :w<Cr>
+nnoremap ZX :w<Cr>:sus<Cr>
 
 "" vim
 noremap <Esc><Esc> <Esc><Esc>:nohlsearch<Cr><Esc>
