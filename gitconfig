@@ -1,9 +1,11 @@
 [color]
 	ui = auto
 [alias]
+	ap = add -p
 	br = branch
 	ci = commit
 	co = checkout
+	cop = checkout -p
 	di = diff
 	dicw = diff --color-words
 	dicwhf = diff --color-words HEAD FETCH_HEAD
@@ -11,12 +13,16 @@
 	dino = diff --name-only
 	ds = diff --staged
 	g = grep
+	l = log --decorate --numstat --summary
+	ll = log --decorate --numstat --summary --pretty=fuller -p
 	nbr = checkout -b
+	ol = log --oneline --decorate
 	sh = show
 	shcw = show --color-words
 	st = status
 	sw = checkout
-
+	unap = reset -p
+	wll = log --decorate --numstat --summary --pretty=fuller -p --word-diff
 [user]
 	name = Kuniyoshi Kouji
 [core]
