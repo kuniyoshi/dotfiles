@@ -1,5 +1,5 @@
 DOTFILES = inputrc\
-	zshrc zsh_aliases zsh_aliases.darwin11.0 zsh_aliases.linux-gnu\
+	zshrc zshenv zsh_aliases zsh_aliases.darwin11.0 zsh_aliases.linux-gnu\
 	gitconfig gitignore\
 	screenrc\
 	vimrc vim\
