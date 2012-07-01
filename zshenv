@@ -1,10 +1,10 @@
-LANG=en_US.UTF-8
-EDITOR=vim
-PAGER=less
-HISTFILE=$HOME/.zsh-history
-HISTSIZE=100000
-SAVEHIST=100000
-WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+export LANG=en_US.UTF-8
+export EDITOR=vim
+export PAGER=less
+export HISTFILE=$HOME/.zsh-history
+export HISTSIZE=100000
+export SAVEHIST=100000
+export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 
 case $OSTYPE in
     darwin*)
@@ -19,6 +19,8 @@ esac
 if [ -d ~/bin ]; then
     export PATH=~/bin:$PATH
 fi
+
+export PATH
 
 # mba: blue
 # vps: purple
@@ -43,9 +45,12 @@ case $OSTYPE in
     ;;
 esac
 
+export PROMPT
+export RPROMPT
+
 case $USER in
     kuniyoshi)
-        EDITOR="emacs"
+        export EDITOR="emacs"
     ;;
 esac
 
