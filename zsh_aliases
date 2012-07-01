@@ -19,6 +19,7 @@ alias s=screen
 
 alias reload-zsh="source ~/.zshrc"
 alias pc='less -R'
+alias pe='vim -'
 alias pd=perldoc
 alias em=emacs
 alias watch_perl='watch_runner -makeprg=perl -beforemake=clear -aftermake='\''echo ... at $(date +%H:%M:%S)'\'
