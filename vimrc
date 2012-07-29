@@ -42,11 +42,11 @@ nnoremap <Leader>pe :!perl -Ilib %<Cr>
 nnoremap <Leader>pd :!perl -Ilib -d %<Cr>
 nnoremap <Leader>ph ggI#!/usr/bin/perl<Cr>use 5.10.0;<Cr>use utf8;<Cr>use strict;<Cr>use warnings;<Cr>use open qw( :utf8 :std );<Cr>use Data::Dumper;<Cr><Cr><Cr><Cr>exit;<Cr><C-g>k<C-g>k<C-g>k
 
-function UnixMode()
+function! UnixMode()
     set tabstop=8 shiftwidth=8 noexpandtab
 endfunction
 
-function CodingMode()
+function! CodingMode()
     set tabstop=4 shiftwidth=4 expandtab
 endfunction
 
