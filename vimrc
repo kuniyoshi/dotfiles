@@ -5,6 +5,7 @@ set list listchars=tab:_\ ,trail:_
 " visualbell is too slow.
 set number ruler
 set hlsearch
+set wildmode=list,full
 set foldmethod=indent nofoldenable
 set backspace=indent,eol,start
 set equalprg=perltidy\ -l=0\ -pt=0
