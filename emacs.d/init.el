@@ -153,6 +153,7 @@
 ;;
 ;; Erlang OTP
 ;;
+;; https://github.com/erlang/otp/blob/maint/lib/tools/emacs/erlang.el
 ;(setq erlang-root-dir "/usr/local/otp")
 (setq exec-path (cons "/opt/local/bin/erl" exec-path))
 (require 'erlang-start)
