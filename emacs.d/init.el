@@ -22,7 +22,7 @@
 ;;;;
 ;;;; Convinience Editor
 ;;;; 
-;;
+
 ;; Remember Cursor Place
 ;; 
 (setq-default save-place t)
@@ -150,6 +150,13 @@
  '(flymake-warnline ((((class color)) (:underline t)))))
 (add-hook 'cperl-mode-hook (lambda () (flymake-mode t)))
 
+;;
+;; Erlang OTP
+;;
+;(setq erlang-root-dir "/usr/local/otp")
+(setq exec-path (cons "/opt/local/bin/erl" exec-path))
+(require 'erlang-start)
+(require 'erlang-flymake)
 
 ;;;; Command Help
 ;;
