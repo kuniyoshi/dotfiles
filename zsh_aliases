@@ -23,6 +23,7 @@ alias pe='vim -'
 alias pd=perldoc
 alias em=emacs
 alias watch_perl='watch_runner -makeprg=perl -beforemake=clear -aftermake='\''echo ... at $(date +%H:%M:%S)'\'
+alias eman='erl -man'
 
 source $0.$OSTYPE
 
