@@ -4,4 +4,4 @@
 *~
 *.backup
 .sass-cache
-
+*\.beam
