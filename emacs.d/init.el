@@ -159,6 +159,18 @@
 (require 'erlang-start)
 (require 'erlang-flymake)
 
+;;
+;; distel
+;;
+;; https://github.com/massemanet/distel
+(add-to-list
+ 'load-path
+ (car (file-expand-wildcards "/usr/local/share/distel/elisp")))
+(require 'distel)
+(distel-setup)
+(setq auto-mode-alist (append (list (cons "\\.yaws$" 'erlang-mode)) auto-mode-alist))
+
+
 ;;;; Command Help
 ;;
 ;; Table
