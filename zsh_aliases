@@ -11,6 +11,7 @@ alias mp3gain="mp3gain -r -c -k"
 alias a=cat
 alias c=pwd
 alias e=$EDITOR
+alias f=file
 alias g=git
 alias j=jobs
 alias l=ls
