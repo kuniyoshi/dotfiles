@@ -37,6 +37,10 @@ case $OSTYPE in
             gwendolyn)
                 PROMPT=$'[%{\e[38;5;163m%}%n%{\e[m%}:%{\e[38;5;163m%}%c%{\e[m%}]%# '
             ;;
+            isukuni)
+                PROMPT="[%F{39}%n%f:%F{39}%c%f]%# "
+                RPROMPT='%F{38}#%f %50<..<%F{38}%~%f %F{38}[%D{%a} %*]%f'
+            ;;
             kuniyoshi)
                 PROMPT="[%F{40}%n%f:%F{40}%c%f]%# "
                 RPROMPT='%F{41}#%f %50<..<%F{42}%~%f %F{42}[%D{%a} %*]%f'
