@@ -10,6 +10,7 @@ alias mp3gain="mp3gain -r -c -k"
 # One Char Aliases
 alias a=cat
 alias c=pwd
+alias d='diff -c'
 alias e=$EDITOR
 alias f=file
 alias g=git
