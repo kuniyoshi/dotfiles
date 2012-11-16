@@ -19,7 +19,6 @@ alias l=ls
 alias p=less
 alias s=screen
 
-alias reload-zsh="source ~/.zshrc"
 alias pc='less -R'
 alias pe='vim -'
 alias pd=perldoc
