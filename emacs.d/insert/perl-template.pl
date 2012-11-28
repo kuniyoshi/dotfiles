@@ -4,6 +4,7 @@ use utf8;
 use strict;
 use warnings;
 use open qw( :std :utf8 );
+use autodie qw( open close );
 use Data::Dumper;
 
 $Data::Dumper::Terse    = 1;
