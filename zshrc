@@ -21,5 +21,13 @@ fi
 
 function mcd () { mkdir -p $1 && cd $1 }
 
+function ginit () {
+    if [ -d .git ]
+    then
+        return 1
+    fi
+    git init && git add . && git commit -m INIT
+}
+
 return
 
