@@ -26,6 +26,7 @@ alias em=emacs
 alias watch_perl='watch_runner -makeprg=perl -beforemake=clear -aftermake='\''echo ... at $(date +%H:%M:%S)'\'
 alias eman='erl -man'
 alias gtop='cd $(git topdir)'
+alias calcsum='awk '\''{sum+=$1}END{print sum}'\'
 #alias perl='echo -e Use erlang!!! "\n"'
 
 source $0.$OSTYPE
