@@ -19,7 +19,8 @@ alias l=ls
 alias p=less
 alias s=screen
 
-alias pc='less -R'
+alias pc='LESS="$LESS -x -e " less -R'
+alias pa='LESS="$LESS -F -X -e" less -F'
 alias pe='vim -'
 alias pd=perldoc
 alias em=emacs
