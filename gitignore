@@ -5,3 +5,5 @@
 *.backup
 .sass-cache
 *.beam
+ebin/*.beam
+ebin/*.app
