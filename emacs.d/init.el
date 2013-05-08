@@ -102,8 +102,10 @@
  ;; If there is more than one, they won't work right.
  ;; '(cperl-array-face ((((class color) (background dark)) (:foreground "#00C" :weight bold))))
  ;; '(cperl-hash-face ((((class color) (background dark)) (:foreground "#C00" :weight bold)))))
- '(cperl-array-face ((((class color)) (:background "#000" :foreground "#00F" :weight bold))))
- '(cperl-hash-face  ((((class color)) (:background "#000" :foreground "#C00" :weight bold)))))
+ '(cperl-array-face ((((class color)) (:foreground "#00F" :weight bold))))
+ '(cperl-hash-face  ((((class color)) (:foreground "#C00" :weight bold)))))
+
+
 
 
 
@@ -159,16 +161,16 @@
 (require 'erlang-start)
 (require 'erlang-flymake)
 
-;;
-;; distel
-;;
-;; https://github.com/massemanet/distel
-(add-to-list
- 'load-path
- (car (file-expand-wildcards "/usr/local/share/distel/elisp")))
-(require 'distel)
-(distel-setup)
-(setq auto-mode-alist (append (list (cons "\\.yaws$" 'erlang-mode)) auto-mode-alist))
+;; ;;
+;; ;; distel
+;; ;;
+;; ;; https://github.com/massemanet/distel
+;; (add-to-list
+;;  'load-path
+;;  (car (file-expand-wildcards "/usr/local/share/distel/elisp")))
+;; (require 'distel)
+;; (distel-setup)
+;; (setq auto-mode-alist (append (list (cons "\\.yaws$" 'erlang-mode)) auto-mode-alist))
 
 
 ;;;; Command Help
