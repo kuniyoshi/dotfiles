@@ -42,6 +42,11 @@ nnoremap <Leader>pe :!perl -Ilib %<Cr>
 nnoremap <Leader>pd :!perl -Ilib -d %<Cr>
 nnoremap <Leader>ph ggI#!/usr/bin/perl<Cr>use 5.10.0;<Cr>use utf8;<Cr>use strict;<Cr>use warnings;<Cr>use open qw( :utf8 :std );<Cr>use Data::Dumper;<Cr><Cr><Cr><Cr>exit;<Cr><C-g>k<C-g>k<C-g>k
 
+"" R
+"" following let way needs newer version than 7.3.762
+"" let g:filetype_r="R"
+au filetypedetect BufRead,BufNewFile *.R set ft=R
+
 function! UnixMode()
     set tabstop=8 shiftwidth=8 noexpandtab
 endfunction
