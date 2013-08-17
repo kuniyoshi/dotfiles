@@ -20,21 +20,12 @@ let mapleader="\\"
 inoremap <C-@> <Nop>
 
 "" Normal mode
-nnoremap <Leader>e :e $MYVIMRC<Cr>
-nnoremap <Leader>b :ls<Cr>:b 
 nnoremap <C-@> @@
 nnoremap ZS :w<Cr>
 nnoremap ZX :w<Cr>:sus<Cr>
 
 "" vim
 noremap <Esc><Esc> <Esc><Esc>:nohlsearch<Cr><Esc>
-
-"" shell
-nnoremap <Leader>ex :!./%<Cr>
-nnoremap <Leader>ee :!chmod +x %<Cr>
-nnoremap <Leader>fmkdir :!mkdir %:r<Cr>
-nnoremap <Leader>fe :e %:h/
-nnoremap <Leader>fce :e %:r/
 
 "" Perl
 nnoremap <Leader>pc :!perl -Ilib -wc %<Cr>
