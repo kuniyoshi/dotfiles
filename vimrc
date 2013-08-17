@@ -48,6 +48,16 @@ endfunction
 
 call CodingMode()
 
+"" NeoBundle
+"" https://github.com/Shougo/neobundle.vim
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#rc(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'https://github.com/jimenezrick/vimerl.git'
+filetype plugin indent on
+NeoBundleCheck
+
 " " Python
 " noremap ,ye <Esc>:!python %<Cr>
 " noremap ,yc <Esc>:!pyflakes %<Cr>
