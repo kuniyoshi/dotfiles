@@ -1,0 +1,8 @@
+function current_branch () {
+    CURRENT_BRANCH=`git branch 2>/dev/null | grep '*' | awk '{print $2}'`
+    if [ ! -z "$CURRENT_BRANCH" ]
+    then
+        CURRENT_BRANCH=" ($CURRENT_BRANCH)"
+    fi
+    print "$CURRENT_BRANCH"
+}

@@ -1,0 +1,7 @@
+function ginit () {
+    if [ -d .git ]
+    then
+        return 1
+    fi
+    git init && git add . && git commit -m INIT
+}

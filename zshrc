@@ -3,11 +3,13 @@
 
 source ~/.zshenv
 
+fpath=(~/.zsh.d $fpath)
 set -o emacs
 setopt extended_history
 setopt hist_ignore_space
 setopt auto_cd
 autoload -U compinit && compinit
+autoload current_branch mcd ginit
 
 stty erase \^H
 
@@ -19,15 +21,4 @@ if [ -f ~/.secretrc ]; then
     source ~/.secretrc
 fi
 
-function mcd () { mkdir -p $1 && cd $1 }
-
-function ginit () {
-    if [ -d .git ]
-    then
-        return 1
-    fi
-    git init && git add . && git commit -m INIT
-}
-
 return
-
