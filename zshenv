@@ -30,7 +30,7 @@ export PATH
 
 case $OSTYPE in
     darwin*)
-        PROMPT="[%F{27}%n%f:%F{27}%c%f]%# "
+        PROMPT='[%F{27}%n%f:%F{27}%c%f%F{27}`current_branch`%f]%# '
         RPROMPT='%F{26}#%f %50<..<%F{12}%~%f %F{21}[%D{%a} %*]%f'
     ;;
     linux*)

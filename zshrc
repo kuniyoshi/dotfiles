@@ -8,6 +8,7 @@ set -o emacs
 setopt extended_history
 setopt hist_ignore_space
 setopt auto_cd
+setopt prompt_subst
 autoload -U compinit && compinit
 autoload current_branch mcd ginit
 
