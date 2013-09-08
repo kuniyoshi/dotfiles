@@ -23,6 +23,7 @@ inoremap <C-@> <Nop>
 nnoremap <C-@> @@
 nnoremap ZS :w<Cr>
 nnoremap ZX :w<Cr>:sus<Cr>
+nnoremap ZD :w<Cr>:make<Cr><Cr>
 
 "" vim
 noremap <Esc><Esc> <Esc><Esc>:nohlsearch<Cr><Esc>
