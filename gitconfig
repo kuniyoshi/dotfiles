@@ -27,6 +27,6 @@
 	name = Kuniyoshi Kouji
 [core]
 	excludesfile = ~/.gitignore
-	pager = less -RFe
+	pager = less -R
 	editor = vim
 
