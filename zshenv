@@ -13,7 +13,8 @@ case $OSTYPE in
     ;;
     linux*)
         SBIN_PATH=/sbin:/usr/sbin:/usr/local/sbin
-        PATH=/usr/local/bin:/usr/local/perl-5.14/bin:/usr/local/perl-5.12/bin:/bin:/usr/bin/:$SBIN_PATH
+        PERL_PATH=/usr/local/perl-5.14/bin:/usr/local/perl-5.12/bin
+        PATH=/usr/local/bin:/bin:/usr/bin:$PERL_PATH:$SBIN_PATH
     ;;
 esac
 
