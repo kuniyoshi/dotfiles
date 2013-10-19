@@ -14,7 +14,8 @@ case $OSTYPE in
     linux*)
         SBIN_PATH=/sbin:/usr/sbin:/usr/local/sbin
         PERL_PATH=/usr/local/perl-5.14/bin:/usr/local/perl-5.12/bin
-        PATH=/usr/local/bin:/bin:/usr/bin:$PERL_PATH:$SBIN_PATH
+        ERLANG_PATH=/usr/local/erlang/bin
+        PATH=/usr/local/bin:/bin:/usr/bin:$ERLANG_PATH:$PERL_PATH:$SBIN_PATH
     ;;
 esac
 
