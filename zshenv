@@ -1,7 +1,7 @@
 export LANG=en_US.UTF-8
 export EDITOR=vim
 export PAGER=less
-export LESS="-e -F -X"
+export LESS="-e -F -X -j 5"
 export HISTFILE=$HOME/.zsh-history
 export HISTSIZE=100000
 export SAVEHIST=100000
