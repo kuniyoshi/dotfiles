@@ -19,8 +19,6 @@ let mapleader="\\"
 " Typo safety for JIS keymap.
 inoremap <C-@> <Nop>
 
-"" Normal mode
-nnoremap <C-@> @@
 nnoremap ZS :w<Cr>
 nnoremap ZX :w<Cr>:sus<Cr>
 nnoremap ZD :w<Cr>:make<Cr><Cr>
