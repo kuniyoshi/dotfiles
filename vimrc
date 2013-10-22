@@ -1,8 +1,6 @@
 set tabstop=4 shiftwidth=4 expandtab
 set noautoindent nocindent smartindent
 set list listchars=tab:_\ ,trail:_
-" set visualbell
-" visualbell is too slow.
 set number ruler
 set hlsearch
 set wildmode=list,full
@@ -12,10 +10,10 @@ set equalprg=perltidy\ -l=0\ -pt=0
 set keywordprg=say
 colorscheme sand
 syntax on
+filetype plugin indent on
 
 let mapleader="\\"
 
-" Insert mode
 " Typo safety for JIS keymap.
 inoremap <C-@> <Nop>
 
@@ -23,7 +21,6 @@ nnoremap ZS :w<Cr>
 nnoremap ZX :w<Cr>:sus<Cr>
 nnoremap ZD :w<Cr>:make<Cr><Cr>
 
-"" vim
 noremap <Esc><Esc> <Esc><Esc>:nohlsearch<Cr><Esc>
 
 "" Perl
@@ -54,7 +51,6 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'https://github.com/jimenezrick/vimerl.git'
-filetype plugin indent on
 NeoBundleCheck
 
 " " Python
@@ -75,14 +71,7 @@ NeoBundleCheck
 " 
 
 " Help
-" set rnu
-" hl-LineNr
-" i_ctrl-e
-" i_ctrl-gj
-" i_ctrl-gk
-" i_ctrl-o
 " i_ctrl-r
-" i_ctrl-y
 " [i
 " [I
 
