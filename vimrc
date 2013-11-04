@@ -8,8 +8,12 @@ set foldmethod=indent nofoldenable
 set backspace=indent,eol,start
 set equalprg=perltidy\ -l=0\ -pt=0
 set keywordprg=say
+set hidden
+set complete+=k
+set dictionary=
 colorscheme sand
 syntax on
+filetype on
 filetype plugin indent on
 
 let mapleader="\\"
@@ -53,25 +57,31 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'https://github.com/jimenezrick/vimerl.git'
 NeoBundleCheck
 
-" " Python
-" noremap ,ye <Esc>:!python %<Cr>
-" noremap ,yc <Esc>:!pyflakes %<Cr>
-" 
-" " PHP
-" noremap ,he <Esc>:!php %<Cr>
-" noremap ,hc <Esc>:!php -l %<Cr>
-" 
-" " Ruby
-" noremap ,re <Esc>:!ruby -Ku %<Cr>
-" noremap ,rc <Esc>:!ruby -Ku -c %<Cr>
-" 
-" " C
-" noremap ,cd <Esc>:!gdb a.out<Cr>
-" noremap ,ce <Esc>:!./a.out<Cr>
-" 
-
 " Help
 " i_ctrl-r
 " [i
 " [I
+" map-operator, omap-info
+" i_ctrl-k
 
+" Plugin
+" https://github.com/tpope/vim-unimpaired
+" v_o
+" @:
+" i_ctrl-n, i_ctrl-p
+" path+=
+" auto marks
+"   jumped: ''
+"   modified: ',
+"   inserted: '^
+"   yanked: '[  ']
+"   selected: '<    '>
+" register
+"   "%
+"   "#
+"   ".
+"   ":
+"   "/
+" '<,'> normal @a
+" i ctrl-x ctrl-l
+" i ctrl-x ctrl-k
