@@ -16,6 +16,7 @@ alias f=file
 alias g=git
 alias j=jobs
 alias l=ls
+alias m=make
 alias p=less
 alias s=screen
 
