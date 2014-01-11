@@ -5,7 +5,8 @@ DOTFILES = inputrc\
 	gitconfig gitignore\
 	screenrc\
 	vimrc vim\
-	emacs.d
+	emacs.d\
+	Rprofile
 REPOSITORY = dotfiles
 
 install: $(DOTFILES)
