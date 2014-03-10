@@ -6,6 +6,7 @@ DOTFILES = inputrc\
 	screenrc\
 	vimrc vim\
 	emacs.d\
+	erlang\
 	Rprofile
 REPOSITORY = dotfiles
 
@@ -13,6 +14,7 @@ install: $(DOTFILES)
 	cd ${HOME} && echo $? | xargs -n 1 -I % ln -shf $(REPOSITORY)/% .%
 
 uninstall: $(DOTFILES)
-	for x in $?\
-		unlink ${HOME}.$$x\
+	for x in $?;\
+	do\
+		echo unlink ${HOME}/.$$x;\
 	done

@@ -1,0 +1,9 @@
+case os:getenv("ERL_WATCH_LOAD") of
+    "1" ->
+        Filename = filename:join(os:getenv("HOME"), "Bundle/erl-watch_load/ebin/watch_load"),
+        {module, watch_load} = code:load_abs(Filename),
+        ok = watch_load:start_loop();
+    false ->
+        ok
+end.
+
