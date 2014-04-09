@@ -7,3 +7,4 @@
 *.beam
 ebin/*.beam
 ebin/*.app
+Rplots.*
