@@ -1,4 +1,4 @@
-function ginit () {
+ginit () {
     if [ -d .git ]
     then
         return 1

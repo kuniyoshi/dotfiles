@@ -1,4 +1,4 @@
-function current_branch () {
+current_branch () {
     CURRENT_BRANCH=`git branch 2>/dev/null | grep -w -v master | grep '*' | awk '{print $2}'`
     if [ ! -z "$CURRENT_BRANCH" ]
     then
