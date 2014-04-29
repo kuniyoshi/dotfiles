@@ -30,6 +30,7 @@ alias eman='erl -man'
 alias gtop='cd $(git topdir)'
 alias calcsum='awk '\''{sum+=$1}END{print sum}'\'
 #alias perl='echo -e Use erlang!!! "\n"'
+alias epoch_to_datetime='perl -E "say scalar localtime"'
 
 source $0.$OSTYPE
 
