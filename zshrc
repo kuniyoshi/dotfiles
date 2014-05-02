@@ -10,7 +10,7 @@ setopt hist_ignore_space
 setopt auto_cd
 setopt prompt_subst
 autoload -U compinit && compinit
-autoload current_branch mcd ginit epoch_to_datetime
+autoload current_branch mcd ginit epoch_to_datetime datetime_to_epoch
 
 stty erase \^H
 

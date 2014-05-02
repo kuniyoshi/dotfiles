@@ -1,0 +1,5 @@
+datetime_to_epoch() {
+    datetime_str="$1"
+    utc_epoch=$(perl -MTime::Piece -e "print Time::Piece->strptime(q{$datetime_str}, q{%Y-%m-%dT%T})->epoch, qq{\n}")
+    perl -MTime::Piece -e "print Time::Piece->localtime(q{$utc_epoch})->epoch"
+}
