@@ -1,4 +1,4 @@
 epoch_to_datetime() {
-    EPOCH="$1"
-    perl -e "print scalar localtime $EPOCH, qq{\n}"
+    epoch="$1"
+    perl -e "print scalar localtime $epoch, qq{\n}"
 }
