@@ -1,4 +1,16 @@
-epoch_to_datetime() {
+_epoch_to_datetime() {
     epoch="$1"
-    perl -e "print scalar localtime $epoch, qq{\n}"
+    TZ=${TZ:-+0900} perl -e "print scalar localtime $epoch, qq{\n}"
+}
+
+epoch_to_datetime() {
+    if [ $# -gt 0 ]
+    then
+        _epoch_to_datetime "$*"
+    else
+        while read epoch
+        do
+            _epoch_to_datetime "$epoch"
+        done
+    fi
 }
