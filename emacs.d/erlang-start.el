@@ -83,7 +83,6 @@
 ;; Associate files extensions ".erl" and ".hrl" with Erlang mode.
 ;;
 
-;;;###autoload
 (let ((a '("\\.erl\\'" . erlang-mode))
       (b '("\\.hrl\\'" . erlang-mode)))
   (or (assoc (car a) auto-mode-alist)
@@ -95,7 +94,6 @@
 ;; Associate files using interpreter "escript" with Erlang mode.
 ;; 
 
-;;;###autoload
 (add-to-list 'interpreter-mode-alist (cons "escript" 'erlang-mode))
 
 ;;
@@ -103,7 +101,6 @@
 ;; file completion.
 ;;
 
-;;;###autoload
 (let ((erl-ext '(".jam" ".vee" ".beam")))
   (while erl-ext
     (let ((cie completion-ignored-extensions))

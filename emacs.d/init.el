@@ -48,7 +48,7 @@
 ;;
 (defadvice kill-region
   (around kill-region-or-backward-kill-word (beg end) activate)
-  (if (and (called-interactively-p) (not mark-active))
+  (if (and (called-interactively-p 'any) (not mark-active))
       (backward-kill-word
        (cond ((null current-prefix-arg) 1)
              ((symbolp current-prefix-arg) -1)
