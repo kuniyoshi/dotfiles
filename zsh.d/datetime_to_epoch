@@ -1,16 +1,12 @@
 _datetime_to_epoch() {
-    datetime_str="$1"
-    TZ=${TZ:-+0900} perl -MTime::Piece -e "print Time::Piece->strptime(q{$datetime_str}, q{%Y-%m-%dT%T})->epoch, qq{\\n}"
+    perl -MTime::Local -F"[-:T]" -alne '$F[0]-=1900; $F[1]--; print timelocal reverse @F'
 }
 
 datetime_to_epoch() {
     if [ $# -gt 0 ]
     then
-        _datetime_to_epoch "$*"
+        echo "$*" | xargs -n 1 | _datetime_to_epoch
     else
-        while read datetime_str
-        do
-            _datetime_to_epoch "$datetime_str"
-        done
+        _datetime_to_epoch
     fi
 }
