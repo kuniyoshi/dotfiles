@@ -3,5 +3,5 @@ ginit () {
     then
         return 1
     fi
-    git init && git add . && git commit -m INIT
+    git init && git add -A && git commit -m INIT
 }
