@@ -1,8 +1,8 @@
 current_branch () {
-    CURRENT_BRANCH=`git branch 2>/dev/null | grep -w -v master | grep '*' | awk '{print $2}'`
-    if [ ! -z "$CURRENT_BRANCH" ]
+    current_branch=`git branch 2>/dev/null | grep -w -v master | grep '*' | awk '{print $2}'`
+    if [ ! -z "$current_branch" ]
     then
-        CURRENT_BRANCH=" ($CURRENT_BRANCH)"
+        current_branch=" ($current_branch)"
     fi
-    print "$CURRENT_BRANCH"
+    print "$current_branch"
 }
