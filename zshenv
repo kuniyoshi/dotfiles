@@ -46,7 +46,7 @@ case $OSTYPE in
                 RPROMPT='%F{38}#%f %50<..<%F{38}%~%f %F{38}[%D{%a} %*]%f'
             ;;
             kuniyoshi)
-                PROMPT="[%F{40}%n%f:%F{40}%c%f]%# "
+                PROMPT="[%F{40}%n%f:%F{40}%c%f%F{40}`current_branch`%f]%# "
                 RPROMPT='%F{41}#%f %50<..<%F{42}%~%f %F{42}[%D{%a} %*]%f'
             ;;
         esac
