@@ -13,6 +13,7 @@
 	dino = diff --name-only
 	ds = diff --staged
 	g = grep
+	h = help
 	l = log --decorate --numstat --summary
 	ll = log --decorate --numstat --summary --pretty=fuller -p
 	nbr = checkout -b
