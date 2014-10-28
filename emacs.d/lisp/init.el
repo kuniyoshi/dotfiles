@@ -8,12 +8,12 @@
 
 ;; Auto Install
 ;; wget http://www.emacswiki.org/emacs/download/auto-install.el
-;; (byte-compile-file "auto-install.el")
+;;  (byte-compile-file "auto-install.el")
 
 ;;;;
 ;;;; Configuration to Configuration
 ;;;;
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;; Auto Install
 (require 'auto-install)
@@ -100,10 +100,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- ;; '(cperl-array-face ((((class color) (background dark)) (:foreground "#00C" :weight bold))))
- ;; '(cperl-hash-face ((((class color) (background dark)) (:foreground "#C00" :weight bold)))))
- '(cperl-array-face ((((class color)) (:foreground "#00F" :weight bold))))
- '(cperl-hash-face  ((((class color)) (:foreground "#C00" :weight bold)))))
+ '(cperl-array-face ((t (:background "color-189" :foreground "color-57" :weight bold))))
+ '(cperl-hash-face ((((class color)) (:foreground "#C00" :weight bold))))
+ '(flymake-errline ((((class color)) (:underline t))))
+ '(flymake-warnline ((((class color)) (:underline t)))))
 
 
 
@@ -147,9 +147,7 @@
 ;;
 ;; Flymake
 ;;
-(custom-set-faces
- '(flymake-errline ((((class color)) (:underline t))))
- '(flymake-warnline ((((class color)) (:underline t)))))
+
 (add-hook 'cperl-mode-hook (lambda () (flymake-mode t)))
 
 ;;
@@ -187,6 +185,3 @@
 ;; Close to Shell
 ;;; M-!, M-|
 ;; M-x hippie-expand
-
-
-
