@@ -11,7 +11,7 @@ DOTFILES = inputrc\
 REPOSITORY = dotfiles
 
 install: $(DOTFILES)
-	cd ${HOME} && echo $? | xargs -n 1 -I % ln -shf $(REPOSITORY)/% .%
+	cd ${HOME} && echo $? | xargs -n 1 -I % ln -sf $(REPOSITORY)/% .%
 
 uninstall: $(DOTFILES)
 	for x in $?;\
