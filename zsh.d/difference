@@ -1,0 +1,3 @@
+difference() {
+    awk 'NR == 1 { previous = $1 } NR > 1 { print $1 - previous; previous = $1 }'
+}
