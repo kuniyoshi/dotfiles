@@ -2,9 +2,9 @@ alias ls='ls -G'
 alias ll='ls -G -l'
 alias la='ls -G -A'
 
-alias GET="lwp-request -m GET"
-alias POST="lwp-request -m POST"
-alias HEAD="lwp-request -m HEAD"
+alias GET="lwp-request5.16 -m GET"
+alias POST="lwp-request5.16 -m POST"
+alias HEAD="lwp-request5.16 -m HEAD"
 alias clear_dns_caache="sudo killall -HUP mDNSResponder"
 # http://support.apple.com/kb/HT5343?viewlocale=ja_JP&locale=ja_JP
 
