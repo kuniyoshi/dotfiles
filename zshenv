@@ -1,15 +1,19 @@
 export LANG=en_US.UTF-8
 export EDITOR=vim
 export PAGER=less
+export PERLDOC_PAGER=less\ -R
 export LESS="-e -F -X -j 5"
 export HISTFILE=$HOME/.zsh-history
 export HISTSIZE=100000
 export SAVEHIST=100000
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+export PYTHONPATH=~/python27/lib/python2.7/site-packages
 
 case $OSTYPE in
     darwin*)
+        PYTHON_PATH=~/python27/bin
         PATH=/Developer/usr/local/bin:/Developer/usr/bin:/usr/local/bin:/opt/local/bin:/bin:/opt/local/sbin:/usr/bin:/Developer/usr/sbin:/usr/sbin:/sbin:/usr/X11/bin
+        PATH="$PATH:$PYTHON_PATH"
     ;;
     linux*)
         SBIN_PATH=/sbin:/usr/sbin:/usr/local/sbin
