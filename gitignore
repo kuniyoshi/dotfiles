@@ -8,3 +8,5 @@
 ebin/*.beam
 ebin/*.app
 Rplots.*
+.RData
+.Rhistory
