@@ -1,0 +1,1 @@
+sjis() { iconv -f cp932 "$1" }
