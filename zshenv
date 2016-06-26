@@ -34,35 +34,20 @@ export PATH
 # vps: purple
 # mbp: blue
 # sh: green
+PROMPT1='[%F{27}%n%f:%F{27}%c%f%F{27}`current_branch`%f]%# '
+RPROMPT1='%F{26}#%f %50<..<%F{12}%~%f %F{21}[%D{%a} %*]%f'
 
-case $OSTYPE in
-    darwin*)
-        PROMPT='[%F{27}%n%f:%F{27}%c%f%F{27}`current_branch`%f]%# '
-        RPROMPT='%F{26}#%f %50<..<%F{12}%~%f %F{21}[%D{%a} %*]%f'
-    ;;
-    linux*)
-        case $USER in
-            gwendolyn)
-                PROMPT=$'[%{\e[38;5;163m%}%n%{\e[m%}:%{\e[38;5;163m%}%c%{\e[m%}]%# '
-            ;;
-            rigel)
-                PROMPT="[%F{39}%n%f:%F{39}%c%f]%# "
-                RPROMPT='%F{38}#%f %50<..<%F{38}%~%f %F{38}[%D{%a} %*]%f'
-            ;;
-            kuniyoshi)
-                PROMPT='[%F{40}%n%f:%F{40}%c%f%F{40}`current_branch`%f]%# '
-                RPROMPT='%F{41}#%f %50<..<%F{42}%~%f %F{42}[%D{%a} %*]%f'
-            ;;
-        esac
-    ;;
-esac
+PROMPT2=$'[%{\e[38;5;163m%}%n%{\e[m%}:%{\e[38;5;163m%}%c%{\e[m%}]%# '
+
+PROMPT3="[%F{39}%n%f:%F{39}%c%f]%# "
+RPROMPT3='%F{38}#%f %50<..<%F{38}%~%f %F{38}[%D{%a} %*]%f'
+
+PROMPT4='[%F{40}%n%f:%F{40}%c%f%F{40}`current_branch`%f]%# '
+RPROMPT4='%F{41}#%f %50<..<%F{42}%~%f %F{42}[%D{%a} %*]%f'
+
+PROMPT=$PROMPT1
+RPROMPT=$RPROMPT1
 
 export PROMPT
 export RPROMPT
-
-case $USER in
-    kuniyoshi)
-        export EDITOR="emacs"
-    ;;
-esac
 
