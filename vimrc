@@ -83,18 +83,6 @@ endfunction
 
 call CodingMode()
 
-"" NeoBundle
-"" https://github.com/Shougo/neobundle.vim
-if has('vim_starting')
-    set nocompatible
-    set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-call neobundle#rc(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'https://github.com/jimenezrick/vimerl.git'
-NeoBundleCheck
-
 filetype on
 filetype plugin indent on
 
