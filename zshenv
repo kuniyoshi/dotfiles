@@ -11,9 +11,11 @@ export PYTHONPATH=~/python27/lib/python2.7/site-packages
 
 case $OSTYPE in
     darwin*)
-        PYTHON_PATH=~/python27/bin
-        PATH=/Developer/usr/local/bin:/Developer/usr/bin:/usr/local/bin:/opt/local/bin:/bin:/opt/local/sbin:/usr/bin:/Developer/usr/sbin:/usr/sbin:/sbin:/usr/X11/bin
-        PATH="$PATH:$PYTHON_PATH"
+        home_path=$HOME/bin
+        perl_path=/opt/local/libexec/perl5.24/sitebin
+        default_path=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+        python_path=$HOME/python27/bin
+        PATH="$home_path:$perl_path:$default_path"
     ;;
     linux*)
         SBIN_PATH=/sbin:/usr/sbin:/usr/local/sbin
