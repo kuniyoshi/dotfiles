@@ -24,6 +24,13 @@
 	sw = checkout
 	unap = reset -p
 	wll = log --decorate --numstat --summary --pretty=fuller -p --word-diff
+	xl = stash list
+	xi = stash save
+	xo = stash pop
+	xd = stash drop
+	xa = stash apply
+	xs = stash show
+	xp = stash show -p
 [user]
 	name = Kuniyoshi Kouji
 [core]
