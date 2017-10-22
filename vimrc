@@ -33,6 +33,7 @@ endfunction
 
 "" Perl
 autocmd FileType perl call PerlStyle()
+autocmd BufNewFile *.pl 0r $HOME/.vim/template/perl.template
 
 function! PerlStyle()
     call ResetAutoCmd()
