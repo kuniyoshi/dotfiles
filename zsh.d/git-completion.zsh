@@ -1,0 +1,1 @@
+/opt/local/share/git/contrib/completion/git-completion.zsh
