@@ -7,6 +7,7 @@
 	co = checkout
 	cop = checkout -p
 	di = diff
+	dica = diff --cached
 	dicw = diff --color-words
 	dicwhf = diff --color-words HEAD FETCH_HEAD
 	dihf = diff HEAD FETCH_HEAD
