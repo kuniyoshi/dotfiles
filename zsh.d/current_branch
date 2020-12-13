@@ -1,3 +1,3 @@
 current_branch () {
-    echo -n $(git branch --show-current | grep -w -v master)
+    echo -n $(git branch --show-current 2>/dev/null | grep -w -v master)
 }
