@@ -1,7 +1,6 @@
 .PHONY: install uninstall
 DOTFILES = inputrc \
-	zshrc zshenv zsh.d \
-	zsh_aliases zsh_aliases.darwin17.0 zsh_aliases.linux-gnu \
+	zshrc zshenv zsh.d zsh_aliases \
 	gitconfig gitignore \
 	screenrc \
 	vimrc vim \

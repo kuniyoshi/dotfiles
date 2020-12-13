@@ -9,27 +9,10 @@ export SAVEHIST=100000
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 export PYTHONPATH=~/python27/lib/python2.7/site-packages
 
-case $OSTYPE in
-    darwin*)
-        home_path=$HOME/bin
-        mac_ports_path=/opt/local/bin
-        perl_path=/opt/local/libexec/perl5.24/sitebin
-        default_path=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-        python_path=$HOME/python27/bin
-        PATH="$home_path:$mac_ports_path:$perl_path:$default_path"
-    ;;
-    linux*)
-        SBIN_PATH=/sbin:/usr/sbin:/usr/local/sbin
-        PERL_PATH=/usr/local/perl-5.14/bin:/usr/local/perl-5.12/bin
-        ERLANG_PATH=/usr/local/erlang/bin
-        RUBY_PATH=/usr/local/ruby/bin
-        PATH=/usr/local/bin:/bin:$RUBY_PATH:/usr/bin:$ERLANG_PATH:$PERL_PATH:$SBIN_PATH
-    ;;
-esac
-
-if [ -d ~/bin ]; then
-    export PATH=~/bin:$PATH
-fi
+home_path=$HOME/bin
+mac_ports_path=/opt/local/sbin:/opt/local/bin
+default_path=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH="$home_path:$mac_ports_path:$default_path"
 
 export PATH
 
@@ -54,3 +37,4 @@ RPROMPT=$RPROMPT1
 export PROMPT
 export RPROMPT
 
+source "$HOME/.cargo/env"

@@ -4,8 +4,6 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias history=' history'
 alias perldoc='perldoc -i'
-alias prove='prove -Ilib'
-alias mp3gain="mp3gain -r -c -k"
 
 # One Char Aliases
 alias a=cat
@@ -20,18 +18,31 @@ alias m=make
 alias n=view_under.pl
 alias p=less
 alias s=screen
+alias h=which
 
 alias pc='LESS="$LESS -x -e " less -R'
 alias pa='LESS="$LESS -F -X -e" less -F'
 alias pe='vim -'
 alias pd=perldoc
 alias em=emacs
-alias watch_perl='watch_runner -makeprg=perl -beforemake=clear -aftermake='\''echo ... at $(date +%H:%M:%S)'\'
-alias eman='erl -man'
-alias gtop='cd $(git topdir)'
-alias calcsum='awk '\''{sum+=$1}END{print sum}'\'
-alias gs='g st'
-#alias perl='echo -e Use erlang!!! "\n"'
 
-source $0.$OSTYPE
+# git
+alias gtop='cd $(git topdir)'
+alias gs='g st'
+
+# ls
+alias ls='ls -G'
+alias ll='ls -G -l'
+alias la='ls -G -A'
+
+# http
+alias GET="lwp-request -m GET"
+alias POST="lwp-request -m POST"
+alias HEAD="lwp-request -m HEAD"
+
+# memorandum
+alias clear_dns_caache="sudo killall -HUP mDNSResponder" # http://support.apple.com/kb/HT5343?viewlocale=ja_JP&locale=ja_JP
+
+# script
+alias calcsum='awk '\''{sum+=$1}END{print sum}'\'
 
