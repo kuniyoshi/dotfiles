@@ -10,9 +10,10 @@ export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 export PYTHONPATH=~/python27/lib/python2.7/site-packages
 
 home_path=$HOME/bin
+bundle_path=$HOME/Bundle/bin
 mac_ports_path=/opt/local/sbin:/opt/local/bin
 default_path=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-PATH="$home_path:$mac_ports_path:$default_path"
+PATH="$home_path:$bundle_path:$mac_ports_path:$default_path"
 
 export PATH
 
