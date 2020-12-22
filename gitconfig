@@ -33,15 +33,20 @@
 	xs = stash show
 	xp = stash show -p
 [user]
-	name = Kuniyoshi Kouji
+	name = Kuniyoshi Koji
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -R
 	editor = vim
 [push]
-	default = matching
+	default = simple
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[pull]
+	ff = only
+[fetch]
+	prune = true
+	pruneTags = true
