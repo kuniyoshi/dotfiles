@@ -13,7 +13,7 @@ alias e=$EDITOR
 alias f=file
 alias g=git
 alias j=jobs
-alias l=ls
+alias l=exa
 alias m=make
 alias n=view_under.pl
 alias p=less
@@ -31,9 +31,9 @@ alias gtop='cd $(git topdir)'
 alias gs='g st'
 
 # ls
-alias ls='ls -G'
-alias ll='ls -G -l'
-alias la='ls -G -A'
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -a'
 
 # http
 alias GET="lwp-request -m GET"
