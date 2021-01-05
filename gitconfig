@@ -13,6 +13,7 @@
 	dihf = diff HEAD FETCH_HEAD
 	dino = diff --name-only
 	ds = diff --staged
+	f = fetch
 	g = grep
 	h = help
 	l = log --decorate --numstat --summary
@@ -25,14 +26,13 @@
 	sw = checkout
 	unap = reset -p
 	wll = log --decorate --numstat --summary --pretty=fuller -p --word-diff
-	xl = stash list
-	xi = stash save
-	xo = stash pop
-	xd = stash drop
 	xa = stash apply
-	xs = stash show
+	xd = stash drop
+	xi = stash save
+	xl = stash list
+	xo = stash pop
 	xp = stash show -p
-	f = fetch
+	xs = stash show
 [user]
 	name = Kuniyoshi Koji
 [core]
