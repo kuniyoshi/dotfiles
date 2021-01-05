@@ -32,6 +32,7 @@
 	xa = stash apply
 	xs = stash show
 	xp = stash show -p
+	f = fetch
 [user]
 	name = Kuniyoshi Koji
 [core]

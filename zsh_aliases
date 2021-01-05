@@ -29,6 +29,7 @@ alias em=emacs
 # git
 alias gtop='cd $(git topdir)'
 alias gs='g st'
+alias gf='g f'
 
 # ls
 alias ls='exa'
