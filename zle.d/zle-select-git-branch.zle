@@ -1,0 +1,13 @@
+function zle-select-git-branch() {
+	local last_word=$(echo "$LBUFFER" | perl -lne 'm{\b\w+\z} and print $&')
+	local previous=$(echo "$LBUFFER" | perl -lpe 's{\b\w+\z}{}')
+
+	local selection=$(select-git-branch "${last_word}")
+
+	LBUFFER="${previous}${selection}"
+	CURSOR=$#LBUFFER
+	zle redisplay
+}
+
+zle -N zle-select-git-branch
+bindkey "^gb" zle-select-git-branch

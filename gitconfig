@@ -24,6 +24,7 @@
 	shcw = show --color-words
 	st = status
 	sw = checkout
+	u = fetch . $(select-git-refspec)
 	unap = reset -p
 	wll = log --decorate --numstat --summary --pretty=fuller -p --word-diff
 	xa = stash apply

@@ -11,15 +11,33 @@ setopt auto_cd
 setopt prompt_subst
 setopt magic_equal_subst
 autoload -U compinit && compinit
-autoload current_branch mcd ginit epoch_to_datetime datetime_to_epoch difference sjis
+autoload current_branch \
+    mcd \
+    ginit \
+    epoch_to_datetime \
+    datetime_to_epoch \
+    difference \
+    sjis \
+    select-git-branch \
+    select-git-refspec \
 
 stty erase \^H
 
-if [ -f ~/.zsh_aliases ]; then
+if [ -d ~/.zle.d ]
+then
+    for x in $(ls -d ~/.zle.d/*.zle)
+    do
+        source "$x"
+    done
+fi
+
+if [ -f ~/.zsh_aliases ]
+then
     source ~/.zsh_aliases
 fi
 
-if [ -f ~/.secretrc ]; then
+if [ -f ~/.secretrc ]
+then
     source ~/.secretrc
 fi
 

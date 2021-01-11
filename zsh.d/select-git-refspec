@@ -1,0 +1,6 @@
+function select-git-refspec() {
+	local query="$1"
+	local branch=$(select-git-branch "${query}")
+
+	echo "origin/${branch}:${branch}"
+}

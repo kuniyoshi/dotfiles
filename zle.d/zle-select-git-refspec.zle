@@ -1,0 +1,13 @@
+function zle-select-git-refspec() {
+	local last_word=$(echo "$LBUFFER" | perl -lne 'm{\b\w+\z} and print $&')
+	local previous=$(echo "$LBUFFER" | perl -lpe 's{\b\w+\z}{}')
+
+	local selection=$(select-git-refspec "${last_word}")
+
+	LBUFFER="${previous}${selection}"
+	CURSOR=$#LBUFFER
+	zle redisplay
+}
+
+zle -N zle-select-git-refspec
+bindkey "^gr" zle-select-git-refspec
