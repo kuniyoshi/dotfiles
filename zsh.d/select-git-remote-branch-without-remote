@@ -1,0 +1,7 @@
+function select-git-remote-branch-without-remote()
+{
+	local query="$1"
+
+	git branch -r \
+		| fzf-fit-height "$query"
+}

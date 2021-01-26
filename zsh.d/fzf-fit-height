@@ -1,0 +1,13 @@
+function fzf-fit-height() {
+	local query="$1"
+	local candidates=$(cat)
+
+	local candidates_size=$(echo "${candidates}" | wc -l | awk '{print $1}')
+	local fzf_line_size=2
+	local max_line_size=22
+	local min_size=$((candidates_size < max_line_size ? candidates_size : max_line_size))
+	local buffer_size=$((min_size + fzf_line_size))
+
+	echo "${candidates}" \
+		| fzf --height "${buffer_size}" --query "${query}"
+}

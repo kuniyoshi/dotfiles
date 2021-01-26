@@ -1,0 +1,8 @@
+function zle-select-history() {
+	BUFFER=$(history -n -r 0 | fzf --no-sort --query "$LBUFFER")
+	CURSOR=$#BUFFER
+	zle redisplay
+}
+
+zle -N zle-select-history
+bindkey "^r" zle-select-history

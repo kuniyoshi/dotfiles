@@ -20,6 +20,8 @@ autoload current_branch \
     sjis \
     select-git-branch \
     select-git-refspec \
+    select-git-remote-branch-without-remote \
+    fzf-fit-height
 
 stty erase \^H
 

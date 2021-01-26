@@ -1,14 +1,7 @@
 function select-git-branch() {
 	local query="$1"
 
-	local branches=$(git branch)
-	local branch_count=$(echo "${branches}" | wc -l | awk '{print $1}')
-	local fzf_line_size=2
-	local max_line_size=22
-	local min_size=$((branch_count < max_line_size ? branch_count : max_line_size))
-	local buffer_size=$((min_size + fzf_line_size))
-
-	echo "${branches}" \
-		| fzf --height "${buffer_size}" --query "${query}" \
-		| perl -lpe 's{^\s*}{}; s{\s*}{}'
+	git branch \
+		| fzf-fit-height "$query" \
+		| perl -lpe 's{^\s*([*]\s+)?}{}; s{\s*}{}'
 }
