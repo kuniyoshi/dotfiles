@@ -21,7 +21,8 @@ autoload current_branch \
     select-git-branch \
     select-git-refspec \
     select-git-remote-branch-without-remote \
-    fzf-fit-height
+    fzf-fit-height \
+    select-file
 
 stty erase \^H
 

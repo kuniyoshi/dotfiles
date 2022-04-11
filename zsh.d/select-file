@@ -1,0 +1,21 @@
+function select-file() {
+	local query="$1"
+
+	if [ -z "$query" ]
+	then
+		ls \
+			| perl -lne 'print -d ? "$_/" : "$_"' \
+			| fzf-fit-height
+	else
+		if [ "${query: -1}" = "/" ]
+		then
+			echo $query >/tmp/select-file.query
+			ls $query \
+				| perl -lne 'print q{'"$query"'} . $_' \
+				| fzf-fit-height
+		else
+			fd "$query" \
+				| fzf-fit-height "$query"
+		fi
+	fi
+}
