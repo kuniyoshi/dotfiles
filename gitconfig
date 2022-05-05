@@ -36,10 +36,12 @@
 	xs = stash show
 [user]
 	name = Kuniyoshi Koji
+	email = kuniyoshi.kouji@gmail.com
 [core]
 	excludesfile = ~/.gitignore
 	pager = less -R
 	editor = vim
+	autocrlf = input
 [push]
 	default = simple
 [filter "lfs"]
@@ -52,3 +54,5 @@
 [fetch]
 	prune = true
 	pruneTags = true
+[init]
+	defaultBranch = main

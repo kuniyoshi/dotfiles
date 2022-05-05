@@ -6,16 +6,29 @@ function select-file() {
 		ls \
 			| perl -lne 'print -d ? "$_/" : "$_"' \
 			| fzf-fit-height
-	else
-		if [ "${query: -1}" = "/" ]
-		then
-			echo $query >/tmp/select-file.query
-			ls $query \
-				| perl -lne 'print q{'"$query"'} . $_' \
-				| fzf-fit-height
-		else
-			fd "$query" \
-				| fzf-fit-height "$query"
-		fi
+		return
 	fi
+
+	if [ "${query: -1}" = "/" ]
+	then
+		ls $query \
+			| perl -lne 'print q{'"$query"'} . $_' \
+			| fzf-fit-height
+		return
+	fi
+
+	local options=()
+
+	if [ "$FD_NO_IGNORE" ]
+	then
+		options=($options "-I")
+	fi
+
+	if [[ "$query" =~ "/" ]]
+	then
+		options=($options "-p")
+	fi
+
+	fd $options "$query" \
+		| fzf-fit-height "$query"
 }

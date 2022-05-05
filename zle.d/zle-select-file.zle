@@ -1,6 +1,6 @@
 function zle-select-file() {
-	local last_word=$(echo "$LBUFFER" | perl -lne 'm{(?<=\s)[./\w]+\z} and print $&')
-	local previous=$(echo "$LBUFFER" | perl -lpe 's{(?<=\s)[./\w]+\z}{}')
+	local last_word=$(echo "$LBUFFER" | perl -lne 'm{(?<=\s)[./-\w]+\z} and print $&')
+	local previous=$(echo "$LBUFFER" | perl -lpe 's{(?<=\s)[./-\w]+\z}{}')
 
 	local selection=$(select-file "${last_word}")
 

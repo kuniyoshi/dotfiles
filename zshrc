@@ -22,7 +22,8 @@ autoload current_branch \
     select-git-refspec \
     select-git-remote-branch-without-remote \
     fzf-fit-height \
-    select-file
+    select-file \
+    optional-source
 
 stty erase \^H
 
@@ -34,14 +35,9 @@ then
     done
 fi
 
-if [ -f ~/.zsh_aliases ]
-then
-    source ~/.zsh_aliases
-fi
+optional-source ~/.zsh_aliases
 
-if [ -f ~/.secretrc ]
-then
-    source ~/.secretrc
-fi
+optional-source ~/.secretrc
 
-return
+optional-source ~/Bundle/zsh-autoenv/autoenv.zsh
+
