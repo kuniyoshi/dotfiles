@@ -41,3 +41,4 @@ optional-source ~/.secretrc
 
 optional-source ~/Bundle/zsh-autoenv/autoenv.zsh
 
+#test -e /Users/kuniyoshi/.iterm2_shell_integration.zsh && source /Users/kuniyoshi/.iterm2_shell_integration.zsh || true

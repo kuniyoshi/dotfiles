@@ -34,9 +34,9 @@ PROMPT4='[%F{40}%n%f:%F{40}%c%f%F{40}`current_branch`%f]%# '
 RPROMPT4='%F{41}#%f %50<..<%F{42}%~%f %F{42}[%D{%a} %*]%f'
 
 PROMPT=$PROMPT1
-RPROMPT=$RPROMPT1
+#RPROMPT=$RPROMPT1
 
 export PROMPT
-export RPROMPT
+#export RPROMPT
 
 source "$HOME/.cargo/env"
