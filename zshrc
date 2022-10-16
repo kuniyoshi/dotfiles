@@ -23,7 +23,8 @@ autoload current_branch \
     select-git-remote-branch-without-remote \
     fzf-fit-height \
     select-file \
-    optional-source
+    optional-source \
+    precmd
 
 stty erase \^H
 

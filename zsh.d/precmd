@@ -1,0 +1,8 @@
+precmd() {
+    if [ $? != 0 ]
+    then
+        echo -e '\033[0;31m'"!!! $?"'\033[0m'
+    fi
+
+    print
+}
