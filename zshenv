@@ -18,8 +18,15 @@ PATH="$home_path:$bundle_path:$mac_ports_path:$perl_path:$default_path"
 
 export PATH
 
-PROMPT='%F{13}%C%f %F{10}`current_branch`%f %F{3}[%D %*]%f
-> '
+# cf.: man -P 'less -p "EXPANSION OF PROMPT"' zshall
+# 1. job count if has
+# 2. path
+# 3. git branch if in
+# 4. date time
+# 5. simple prompt
+# e.g.: (1) ~/Modeling/pose_library git(main) [22-10-16 21.03.29]
+PROMPT='%(1j.%{(%j)%} .)%F{13}%3~%f %F{10}`current_branch`%f %F{3}[%D %D{%H.%M.%S}]%f
+%# '
 export PROMPT
 
 source "$HOME/.cargo/env"

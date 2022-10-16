@@ -1,8 +1,6 @@
 precmd() {
-    if [ $? != 0 ]
-    then
-        echo -e '\033[0;31m'"!!! $?"'\033[0m'
-    fi
+    # TODO: alert if exit code is not 0.
+    # but do not want be alerted if suspend.
 
     print
 }

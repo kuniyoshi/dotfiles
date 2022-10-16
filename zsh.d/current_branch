@@ -1,9 +1,9 @@
 current_branch () {
-    current_branch=$(git branch --show-current 2>/dev/null| grep -w -v master)
+    current_branch=$(git branch --show-current 2>/dev/null)
 
     if [ -n "$current_branch" ]
     then
-        current_branch=" ($current_branch)"
+        current_branch="git($current_branch)"
     fi
 
     print "$current_branch"
