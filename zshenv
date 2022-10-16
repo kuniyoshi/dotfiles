@@ -25,7 +25,7 @@ export PATH
 # 4. date time
 # 5. simple prompt
 # e.g.: (1) ~/Modeling/pose_library git(main) [22-10-16 21.03.29]
-PROMPT='%(1j.%{(%j)%} .)%F{13}%3~%f %F{10}`current_branch`%f %F{3}[%D %D{%H.%M.%S}]%f
+PROMPT='%(1j.%{(%j)%} .)%F{13}%3~%f %F{10}`current_branch`%f %F{3}[%D %D{%H:%M:%S}]%f
 %# '
 export PROMPT
 
