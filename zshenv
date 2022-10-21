@@ -20,12 +20,12 @@ export PATH
 
 # cf.: man -P 'less -p "EXPANSION OF PROMPT"' zshall
 # 1. job count if has
-# 2. path
-# 3. git branch if in
+# 2. git branch if in
+# 3. path
 # 4. date time
 # 5. simple prompt
 # e.g.: (1) ~/Modeling/pose_library git(main) [22-10-16 21.03.29]
-PROMPT='%(1j.%{(%j)%} .)%F{13}%3~%f %F{10}`current_branch`%f %F{3}[%D %D{%H:%M:%S}]%f
+PROMPT='%(1j.%{(%j)%} .)%B%F{10}`current_branch`%f%b %F{13}%3~%f %F{3}[%D %D{%H:%M:%S}]%f
 %# '
 export PROMPT
 
