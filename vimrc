@@ -27,6 +27,8 @@ let mapleader="\\"
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[6 q"
 
+" open a file, create new if no file exists
+map gf :e <cfile><CR>
 
 " Typo safety for JIS keymap.
 inoremap <C-@> <Nop>
