@@ -12,4 +12,4 @@ function zle-select-git-modified() {
 }
 
 zle -N zle-select-git-modified
-bindkey "^g^m" zle-select-git-modified
+bindkey "^gm" zle-select-git-modified
