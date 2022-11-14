@@ -1,0 +1,10 @@
+stash_icon () {
+    git rev-parse 2>/dev/null || return
+
+    local has_stash=$(git stash list | wc -l)
+
+    if [ "$has_stash" -ge 1 ]
+    then
+        echo 👺\ 
+    fi
+}

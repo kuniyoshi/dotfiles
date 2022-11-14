@@ -12,6 +12,7 @@ setopt prompt_subst
 setopt magic_equal_subst
 autoload -U compinit && compinit
 autoload current_branch \
+    stash_icon \
     mcd \
     ginit \
     epoch_to_datetime \
