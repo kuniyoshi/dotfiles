@@ -1,7 +1,6 @@
 function fzf_fit_height
     set query $argv[1]
-    echo "### [$query]" >&2
-    set candidates (read -z -l)
+    read -a -z candidates
 
     set candidates_size (count $candidates)
     set fzf_line_size 2

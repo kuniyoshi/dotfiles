@@ -37,9 +37,8 @@ abbr --add -- calcsum 'awk '\''{sum+=$1}END{print sum}'\'
 
 # key binding
 function fish_user_key_bindings
-    bind \cgb 'select_git_branch (commandline -t)'
-#    bind \cc clear_line
-    bind \ew 'my_custom_function (commandline -t)'
+    bind \cgb select_git_branch
+    bind \cc clear_line
 end
 
 # shell integration for kitty terminal
