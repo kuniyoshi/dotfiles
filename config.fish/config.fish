@@ -1,6 +1,6 @@
 # environment variables
 set --export EDITOR vim
-set --export PAGER less -R
+set --export PAGER less
 set --global --append fish_user_paths \
     /opt/local/sbin/ \
     /opt/local/bin/ \
@@ -16,23 +16,24 @@ end
 
 # keep configuring when interactive
 
+# alias
+alias a bat
+alias p "$PAGER"
+alias e "$EDITOR"
+alias g git
+alias l exa
+alias ll "exa -l"
+alias j jobs
+alias m make
+alias f file
+alias s screen
+alias c pwd
+
+alias pd "perldoc -i"
+alias gs "git status"
+alias gf "git fetch"
+
 # abbreviation
-abbr --add -- a bat
-abbr --add -- p $PAGER
-abbr --add -- e $EDITOR
-abbr --add -- g git
-abbr --add -- l exa
-abbr --add -- c pwd
-abbr --add -- ll exa -l
-abbr --add -- j jobs
-abbr --add -- m make
-abbr --add -- f file
-abbr --add -- s screen
-
-abbr --add -- pd perldoc -i
-abbr --add -- gs git status
-abbr --add -- gf git fetch
-
 abbr --add -- calcsum 'awk '\''{sum+=$1}END{print sum}'\'
 
 # key binding
