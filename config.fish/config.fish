@@ -41,6 +41,7 @@ function fish_user_key_bindings
     bind \cgb commandline_replace_git_branch
     bind \cgf commandline_replace_git_refspec
     bind \cc clear_line
+    bind \cx\cf commandline_replace_fd
 end
 
 # shell integration for kitty terminal
