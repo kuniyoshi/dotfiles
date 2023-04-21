@@ -6,7 +6,7 @@ alias history=' history'
 alias perldoc='perldoc -i'
 
 # One Char Aliases
-alias a=cat
+alias a=bat
 alias c=pwd
 alias d='diff -c'
 alias e=$EDITOR
