@@ -38,7 +38,8 @@ abbr --add -- calcsum 'awk '\''{sum+=$1}END{print sum}'\'
 
 # key binding
 function fish_user_key_bindings
-    bind \cgb select_git_branch
+    bind \cgb commandline_replace_git_branch
+    bind \cgf commandline_replace_git_refspec
     bind \cc clear_line
 end
 
