@@ -6,7 +6,8 @@ DOTFILES = inputrc \
 	vimrc vim \
 	emacs.d \
 	erlang \
-	Rprofile
+	Rprofile \
+	tmux.conf
 CONFIG_DIRECTORIES = config.fish config.kitty
 REPOSITORY = dotfiles
 
