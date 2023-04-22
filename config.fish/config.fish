@@ -36,6 +36,9 @@ alias gf "git fetch"
 # abbreviation
 abbr --add -- calcsum 'awk '\''{sum+=$1}END{print sum}'\'
 
+# event handlers
+source ~/.config/fish/event_handlers/*.fish
+
 # key binding
 function fish_user_key_bindings
     bind \cgb commandline_replace_git_branch
