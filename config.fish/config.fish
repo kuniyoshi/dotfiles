@@ -26,7 +26,7 @@ alias ll "exa -l"
 alias j jobs
 alias m make
 alias f file
-alias s screen
+alias s tmux
 alias c pwd
 
 alias pd "perldoc -i"
