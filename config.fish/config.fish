@@ -1,4 +1,5 @@
 # environment variables
+set --export LANG en_US.UTF-8
 set --export EDITOR vim
 set --export PAGER less
 set --global --append fish_user_paths \
@@ -45,6 +46,7 @@ function fish_user_key_bindings
     bind \cgf commandline_replace_git_refspec
     bind \cc clear_line
     bind \cx\cf commandline_replace_fd
+    bind \cx\cp expand_command_to_path
 end
 
 # shell integration for kitty terminal
