@@ -52,3 +52,5 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
     kitty-integration
     unfunction kitty-integration
 fi
+
+source /Users/kuniyoshi/.config/broot/launcher/bash/br
