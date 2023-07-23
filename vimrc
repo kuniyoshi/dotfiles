@@ -67,6 +67,9 @@ function! PerlStyle()
     " *note* this will not restore when leave from perl filetype.
     set iskeyword+=:
     setlocal spellfile=~/.vim/spell/perl.add
+    abbr fori for ( my $i = 0; $i < TODO; ++$i ) {<CR>} <c-o>:normal! xO<cr>
+    abbr forj for ( my $j = 0; $j < TODO; ++$j ) {<CR>} <c-o>:normal! xO<cr>
+    abbr fork for ( my $k = 0; $k < TODO; ++$k ) {<CR>} <c-o>:normal! xO<cr>
 endfunction
 
 "" R
