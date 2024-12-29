@@ -3,10 +3,10 @@ set --export LANG en_US.UTF-8
 set --export EDITOR vim
 set --export PAGER less
 set --global --append fish_user_paths \
-    /opt/local/sbin/ \
-    /opt/local/bin/ \
     ~/bin \
-    ~/.cargo/bin/
+    ~/.cargo/bin/ \
+    /opt/local/sbin/ \
+    /opt/local/bin/
 set --export PERLDOC_PAGER less\ -R
 set --export LESS "-e -F -X -j 5"
 
@@ -33,6 +33,8 @@ alias c pwd
 alias pd "perldoc -i"
 alias gs "git status"
 alias gf "git fetch"
+alias pp pbpaste
+alias pc pbcopy
 
 # abbreviation
 abbr --add -- calcsum 'awk '\''{sum+=$1}END{print sum}'\'
