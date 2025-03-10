@@ -42,6 +42,7 @@
 	pager = less -R
 	editor = vim
 	autocrlf = input
+	quotepath = false
 [push]
 	default = simple
 [filter "lfs"]
