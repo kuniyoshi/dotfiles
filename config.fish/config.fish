@@ -44,11 +44,21 @@ source ~/.config/fish/event_handlers/*.fish
 
 # key binding
 function fish_user_key_bindings
-    bind \cgb commandline_replace_git_branch
-    bind \cgf commandline_replace_git_refspec
     bind \cc clear_line
     bind \cx\cf commandline_replace_fd
     bind \cx\cp expand_command_to_path
+
+    # git
+    bind \cgb commandline_replace_git_branch
+    bind \cgf commandline_replace_git_refspec
+    bind \cg\cs 'git status; commandline -f execute'
+    bind \cgs 'git status; commandline -f execute'
+    bind \cg\cd 'git diff; commandline -f execute'
+    bind \cgd 'git diff; commandline -f execute'
+    bind \cg\ca 'commandline -r "git add "'
+    bind \cga 'commandline -r "git add "'
+    bind \cg\cc 'commandline -r "git commit"'
+    bind \cgc 'commandline -r "git commit"'
 end
 
 # shell integration for kitty terminal
