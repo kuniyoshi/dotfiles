@@ -9,7 +9,7 @@ set backspace=indent,eol,start
 set keywordprg=say
 set hidden
 "set complete+=k
-colorscheme sorbet
+"colorscheme sorbet
 syntax on
 
 let mapleader="\\"
