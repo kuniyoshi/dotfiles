@@ -59,6 +59,8 @@ function fish_user_key_bindings
     bind \cga 'commandline -r "git add "'
     bind \cg\cc 'commandline -r "git commit"'
     bind \cgc 'commandline -r "git commit"'
+    bind \cg\cl 'git commit -a; commandline -f execute'
+    bind \cgl 'git commit -a; commandline -f execute'
 end
 
 # shell integration for kitty terminal
