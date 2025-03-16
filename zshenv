@@ -30,3 +30,4 @@ PROMPT='%(1j.%{(🎫%j)%} .)`stash_icon`%B%F{10}`current_branch`%f%b %F{13}%3~%f
 export PROMPT
 
 source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
