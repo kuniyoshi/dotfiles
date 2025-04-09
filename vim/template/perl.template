@@ -1,8 +1,5 @@
 #!/usr/bin/env perl
-use 5.10.0;
-use utf8;
-use strict;
-use warnings;
+use v5.38;
 use open qw( :utf8 :std );
 use Data::Dumper;
 
