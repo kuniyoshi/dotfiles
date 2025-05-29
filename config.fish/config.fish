@@ -4,7 +4,7 @@ set --export EDITOR vim
 set --export PAGER less
 set --global --append fish_user_paths \
     ~/bin \
-    ~/.npm-global/ \
+    ~/.npm-global/bin/ \
     ~/.cargo/bin/ \
     ~/go/bin/ \
     /opt/local/sbin/ \
