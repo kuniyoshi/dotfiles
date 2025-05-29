@@ -4,6 +4,7 @@ set --export EDITOR vim
 set --export PAGER less
 set --global --append fish_user_paths \
     ~/bin \
+    ~/.npm-global/ \
     ~/.cargo/bin/ \
     ~/go/bin/ \
     /opt/local/sbin/ \
@@ -73,3 +74,6 @@ end
 
 # shell integration for zellij
 #eval (zellij setup --generate-auto-start fish | string collect)
+
+# Added by Windsurf
+fish_add_path /Users/kuniyoshi/.codeium/windsurf/bin
