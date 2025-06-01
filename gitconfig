@@ -23,7 +23,7 @@
 	sh = show
 	shcw = show --color-words
 	st = status
-	sw = checkout
+	sw = switch
 	u = fetch . $(select-git-refspec)
 	unap = reset -p
 	wll = log --decorate --numstat --summary --pretty=fuller -p --word-diff
@@ -57,3 +57,5 @@
 	pruneTags = true
 [init]
 	defaultBranch = main
+[rebase]
+	autostash = true
