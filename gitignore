@@ -10,3 +10,4 @@ ebin/*.app
 Rplots.*
 .RData
 .Rhistory
+.claude/
