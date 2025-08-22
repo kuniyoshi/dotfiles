@@ -5,6 +5,7 @@ set --export PAGER less
 set --global --append fish_user_paths \
     ~/bin \
     ~/.npm-global/bin/ \
+    ~/.local/bin/ \
     ~/.cargo/bin/ \
     ~/go/bin/ \
     /opt/local/sbin/ \
