@@ -8,6 +8,7 @@ set foldmethod=indent nofoldenable
 set backspace=indent,eol,start
 set keywordprg=say
 set hidden
+set nrformats=bin,hex
 "set complete+=k
 "colorscheme sorbet
 syntax on
