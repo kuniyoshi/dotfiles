@@ -12,6 +12,7 @@ set --global --append fish_user_paths \
     /opt/local/bin/
 set --export PERLDOC_PAGER less\ -R
 set --export LESS "-e -F -X -j 5"
+set --export ITO_ROOT ~/Development/mylog
 set --export TODO_FILE ~/Development/mylog/todo.txt
 set --export DONE_FILE ~/Development/mylog/done.txt
 
