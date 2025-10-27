@@ -44,6 +44,10 @@ nnoremap ZD :w<Cr>:make<Cr><Cr>
 
 noremap <Esc><Esc> <Esc><Esc>:nohlsearch<Cr><Esc>
 
+" Clipboard
+vmap <C-c> "+y
+nmap <C-c> "+yy
+
 " *note* need more smart way.
 function! ResetAutoCmd()
     set dictionary=
