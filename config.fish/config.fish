@@ -31,7 +31,7 @@ alias g git
 alias l exa
 alias ll "exa -l"
 alias j jobs
-alias m make
+alias m mise
 alias f file
 alias s tmux
 alias c pwd
