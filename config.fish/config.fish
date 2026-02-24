@@ -81,3 +81,8 @@ end
 
 # Added by Windsurf
 fish_add_path /Users/kuniyoshi/.codeium/windsurf/bin
+
+# mise
+if status is-interactive
+    mise activate fish | source
+end
