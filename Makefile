@@ -5,7 +5,6 @@ DOTFILES = inputrc \
 	screenrc \
 	vimrc vim \
 	emacs.d \
-	erlang \
 	Rprofile \
 	tmux.conf
 CONFIG_DIRECTORIES = config.fish config.kitty
