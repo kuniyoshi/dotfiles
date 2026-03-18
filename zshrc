@@ -54,3 +54,5 @@ if test -n "$KITTY_INSTALLATION_DIR"; then
 fi
 
 source /Users/kuniyoshi/.config/broot/launcher/bash/br
+
+. "$HOME/.local/bin/env"
